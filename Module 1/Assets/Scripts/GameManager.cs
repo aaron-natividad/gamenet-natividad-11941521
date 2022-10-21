@@ -36,7 +36,6 @@ public class GameManager : MonoBehaviourPunCallbacks
                 PhotonNetwork.Instantiate(playerPrefab.name, new Vector3(xRandomPoint, 0, zRandomPoint), Quaternion.identity);
             }
         }
-        
     }
 
     // Update is called once per frame
