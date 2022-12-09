@@ -22,7 +22,7 @@ public class PlayerSelection : MonoBehaviourPunCallbacks
         SelectablePlayers[x].SetActive(true);
 
         // Set the player selection for the vehicle
-        ExitGames.Client.Photon.Hashtable playerSelectionProperties = new ExitGames.Client.Photon.Hashtable() { { Constants.PLAYER_SELECTION_NUMBER, playerSelectionNumber } };
+        ExitGames.Client.Photon.Hashtable playerSelectionProperties = new ExitGames.Client.Photon.Hashtable() { { Constants.PLAYER_SELECTION_NUMBER, x } };
         PhotonNetwork.LocalPlayer.SetCustomProperties(playerSelectionProperties);
     }
 

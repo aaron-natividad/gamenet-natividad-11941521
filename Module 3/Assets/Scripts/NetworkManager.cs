@@ -102,7 +102,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             // Create room based on options
             roomOptions.CustomRoomPropertiesForLobby = roomPropertiesInLobby;
             roomOptions.CustomRoomProperties = customRoomProperties;
-            roomOptions.MaxPlayers = 3;
+            roomOptions.MaxPlayers = 2;
             GetComponent<PlayerSelection>().SetGameModePlayers(GameMode);
             PhotonNetwork.CreateRoom(roomName, roomOptions);
         }
